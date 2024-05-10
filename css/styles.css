@@ -1,94 +1,76 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif; /* Set default font family */
+  font-family: Arial, sans-serif; /* Set all fonts to sans-serif */
 }
 
-/* Header styling */
+/* Apply global styles */
+body {
+  background-color: #f8f8f8; /* Set a light background color for the body */
+}
+
 header {
-  background-color: pink;
+  background-color: #ff69b4; /* Dark pink background for the header */
+  color: #fff;
+  padding: 10px;
   text-align: center;
-  padding: 20px 0;
 }
 
-/* Navigation styling */
 nav ul {
   list-style-type: none;
   padding: 0;
-text-align: center;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 nav ul li a {
+  color: #fff;
   text-decoration: none;
-  color: black;
-    padding: 10px;
 }
 
-/* Section styling */
-section {
-  padding: 40px 20px;
-}
-
-/* Welcome section */
-#home {
-  margin-bottom: 40px; /* Page break after welcome section */
-}
-
-/* About Us section */
-#about {
-  margin-bottom: 40px; /* Page break after about us section */
-}
-
-/* Products section specific styling */
-#products {
-  position: relative; /* Position relative for absolute positioning */
-  background-color: #ffd700; /* Mustard yellow background */
-  padding-top: 40px; /* Top padding to start yellow background below header */
-  padding-bottom: 40px; /* Bottom padding to stop before footer */
-}
-
-.product {
-  display: flex; /* Use flexbox for product layout */
-  align-items: center; /* Center align items vertically */
-}
-
+/* Target the product image */
 .product img {
-  width: 120px; /* Thumbnail size for product image */
+  max-width: 100%;
   height: auto;
-  margin-right: 20px;
+  display: block;
+  background-color: #d4af37; /* Mustard yellow background */
+  padding: 10px;
 }
 
-.product h3 {
-  font-weight: bold;
-}
-
-.product p {
-  font-weight: bold;
-  color: green; /* Green color for price */
-}
-
+/* Style the product details */
+.product h3,
+.product p,
 .product button {
-  background-color: green;
-  color: white;
-  padding: 8px 16px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Style the Add to Cart button */
+.product button {
+  background-color: #4caf50; /* Green button */
+  color: #fff;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
-/* Footer styling */
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: black; /* black background for footer */
-  color: white; /* White text color for footer */
+.product button:hover {
+  background-color: #7cb342; /* Light green on hover */
 }
 
-/* Make h1 and h2 headings bold */
-h1, h2 {
-  font-weight: bold;
+/* Add a line to separate sections */
+section {
+  padding: 20px; /* Add padding inside each section */
+  border-bottom: 1px solid #ccc; /* Horizontal line to separate sections */
+}
+
+/* Remove border from last section to avoid extra line at the bottom */
+section:last-child {
+  border-bottom: none;
 }
