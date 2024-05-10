@@ -64,6 +64,14 @@ nav ul li a {
   background-color: #7cb342; /* Light green on hover */
 }
 
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: darkgray; /* Dark gray background for footer */
+  color: white; /* White text color for footer */
+}
+
 /* Add a line to separate sections */
 section {
   padding: 20px; /* Add padding inside each section */
