@@ -42,9 +42,15 @@ nav ul li a {
 
 /* Target the product image */
 .product img {
-  max-width: 100px; /* Set maximum width for thumbnail */
+  max-width: 100%;
   height: auto;
-  margin-right: 20px; /* Add margin to separate image from details */
+  display: block;
+  background-color: #d4af37; /* Mustard yellow background */
+  padding: 10px;
+  /* size */
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 /* Style the product details */
@@ -82,7 +88,7 @@ nav ul li a {
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: darkgray; /* Dark gray background for footer */
+  background-color: black; 
   color: white; /* White text color for footer */
 }
 
