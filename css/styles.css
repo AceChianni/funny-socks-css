@@ -59,6 +59,7 @@ header {
 nav ul {
   list-style-type: none;
   padding: 0;
+text-align: center;
 }
 
 nav ul li {
@@ -69,6 +70,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
+    padding: 10px;
 }
 
 /* Section styling */
@@ -79,6 +81,7 @@ section {
 /* Products section specific styling */
 #products {
   background-color: #ffd700; /* Mustard yellow background */
+    padding-bottom: 40px;
 }
 
 .product {
